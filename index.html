@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title> BagBag-Home</title>
+  </head>
+  <body>
+    <!-- Page Loader -->
+<div id="loader">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+      <!-- Logo -->
+      <div class="logo_section mb-2 mt-2">
+          <img src="images/bag_bag_canva.png" alt="" class="logo">
+      </div>
+    <!-- Nav Bar  Start-->
+    <nav class="navcolor navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"  
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center nav_list"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link me-3"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Men
+              </a>
+              <ul class="drp_down dropdown-menu">
+                <li><a class="dropdown-item" href="pages/Breifcases.html">Briefcases</a></li>
+                <li><a class="dropdown-item" href="pages/Wallets.html">Wallets</a></li>
+                <li><a class="dropdown-item" href="pages/Sling Bags.html">Sling Bags</a></li>
+                <li><a class="dropdown-item" href="pages/Gym Bags.html">Gym Bags</a></li>
+                <li><a class="dropdown-item" href="pages/Laptop Bags.html">Laptop Bags</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Women
+              </a>
+              <ul class="drp_down dropdown-menu">
+                <li><a class="dropdown-item" href="pages/handbag.html">HandBag</a></li>
+                <li><a class="dropdown-item" href="pages/Tote Bags.html">Tote Bag</a></li>
+                <li><a class="dropdown-item" href="pages/slings page.html">Sling Bag</a></li>
+                <li><a class="dropdown-item" href="pages/backpack.html">BackPack</a></li>
+                <li><a class="dropdown-item" href="pages/Clutches.html">Clutches</a></li>
+              </ul>
+              <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Brands
+              </a>
+              <ul class="drp_down dropdown-menu ">
+                <li><a class="dropdown-item" href="pages/Gucci.html">Gucci</a></li>
+                <li><a class="dropdown-item" href="pages/Prada.html">Prada</a></li>
+                <li>
+                  <a class="dropdown-item" href="pages/chanel.html">Chanel</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/lv.html">Louis Vuitton</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/hermes.html">Hermes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/dior.html">Dior</a>
+                </li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="pages/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="pages/queries.html">Queries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="pages/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="pages/contact.html"> Contact Us </a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav Bar End -->
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <div>
+    <h1>Discover Fashion Like Never Before</h1>
+    <div class="hero-options">
+      <div class="hero-card" onclick="location.href='pages/men.html'"> For Him</div>
+<div class="hero-card" onclick="location.href='pages/women.html'"> For Her</div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Brands Section -->
+<section class="brands-section">
+  <div class="container">
+    <h2 class="animate text-white pt-2 brand-carousal-heading">Our Exclusive Brands</h2>
+    <div class="d-flex justify-content-center flex-wrap animate">
+      <img src="images/home page/gucci_logo.png" class="brand-logo" alt="Gucci" onclick="location.href='pages/gucci.html'">
+      <img src="https://1000logos.net/wp-content/uploads/2017/05/Prada-Logo.png" class="brand-logo" alt="Prada" onclick="location.href='pages/prada.html'">
+      <img src="images/home page/chanel_logo.png" class="brand-logo" alt="Chanel" onclick="location.href='pages/chanel.html'">
+      <img src="images/home page/louis_vuitton.png" class="brand-logo" alt="Louis Vuitton" onclick="location.href='pages/lv.html'">
+      <img src="images/home page/hermes_logo.png" class="brand-logo" alt="Hermès" onclick="location.href='pages/hermes.html'">
+      <img src="images/home page/dior_logo.png " class="brand-logo" alt="Dior" onclick="location.href='pages/dior.html'">
+    </div>
+  </div>
+</section>
+
+
+<!-- Scroll Animation Script -->
+<script src="js/jquery-3.7.1.js"></script>
+<script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        $(".animate").addClass("visible");
+      }
+    });
+  });
+</script>
+<!-- Scroll Animation End -->
+
+
+ <!-- Featured Section -->
+
+<div class="text-center">
+  <h2 class="featureProducts highlighted-bounce fw-bold mb-4 mt-5">
+    SUMMER SALE - 50% OFF ON THE FOLLOWING PRODUCTS!
+  </h2>
+</div>
+
+
+
+<!-- Wrapper to control width and prevent overflow -->
+<div style="width: 100%; overflow-x: hidden; padding: 0 2rem;">
+  <div class="row justify-content-center gx-4">
+
+  <!-- Card One -->
+  <div class="col-12 col-md-3 d-flex mt-5">
+    <div class="card w-100 h-100" style="border: none;">
+      <img src="images/sales page/salespage image 1.avif" class="card-img-top" alt="image">
+      <div class="card-body d-flex flex-column text-center">
+        <h5 class="card-title">Large Tote Bag</h5>
+        <p class="card-text">Waterproof vegan leather tote bag. <br>Spacious, stylish and durable for daily use.</p>
+        <h5 class="price">$500</h5>
+        <a href="buy now/sales page/salespage-btn 1.html" class="btn mt-auto">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Two -->
+  <div class="col-12 col-md-3 d-flex mt-5">
+    <div class="card w-100 h-100" style="border: none;">
+      <img src="images/sales page/salespage image 2.webp" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column text-center">
+        <h5 class="card-title">Silver Formal Hand Bag</h5>
+        <p class="card-text">Elegant silver faux leather design. <br>Perfect for formal events and evenings out.</p>
+        <h5 class="price">$500</h5>
+        <a href="buy now/sales page/salespage-btn 2.html" class="btn mt-auto">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Three -->
+  <div class="col-12 col-md-3 d-flex mt-5">
+    <div class="card w-100 h-100" style="border: none;">
+      <img src="images/sales page/salespage image 3.webp" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column text-center">
+        <h5 class="card-title">Jule 3PC - Gray</h5>
+        <p class="card-text">Sleek gray faux leather 3-piece set. <br>Versatile design for everyday elegance.</p>
+        <h5 class="price">$650</h5>
+        <a href="buy now/sales page/salespage-btn 3.html" class="btn mt-auto">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Four -->
+  <div class="col-12 col-md-3 d-flex mt-5">
+    <div class="card w-100 h-100" style="border: none;">
+      <img src="images/sales page/salespage image 4.webp" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column text-center">
+        <h5 class="card-title">Hermelinda Crossbody</h5>
+        <p class="card-text">Adorable compact crossbody design. <br>Lightweight and perfect for casual days.</p>
+        <h5 class="price">$450</h5>
+        <a href="buy now/sales page/salespage-btn 4.html" class="btn mt-auto">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- View More Button -->
+    <div class="col-12 text-center mt-4">
+      <a href="pages/sales page.html" class="btn fw-bold mt-2" style="width: 30%; font-size: 17px;">View More</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+  <hr style="width: 100%; height: 20px;"> 
+
+<!-- Additional Cards -->
+
+  <section class="additional-info-section text-center my-5">
+  <h2 class="mb-3 fw-bold fst-italic" style="color: #800000;">How Can We Help You?</h2>
+  <p class="lead mx-auto" style="max-width: 600px;">
+    Have questions or want to know more about BagBag? We’re here to help and guide you every step of the way.
+  </p>
+</section>
+
+<div class="row text-center container-fluid mt-5 mb-5 px-5 pb-5 pt-5">
+  <div class="col-sm-12 col-md-4">
+    <div class="ad-card p-4 d-flex flex-column text-center shadow">
+      <h2 class="mt-2">Contact Us</h2>
+      <p>We’d love to hear from you—whether you’ve got a question, feedback, or just want to say hi.</p>
+      <a href="pages/contact.html" class="btn mt-auto">Contact Us</a>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <div class="ad-card p-4 d-flex flex-column text-center shadow">
+      <h2 class="mt-2">Need Help?</h2>
+      <p>Any questions/concerns regarding BagBag? We are here for you, reach out now.</p>
+      <a href="pages/queries.html" class="btn mt-auto">Queries</a>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <div class="ad-card p-4 d-flex flex-column text-center shadow">
+      <h2 class="mt-2">Learn More</h2>
+      <p>Discover the journey that brought us here and where we’re going next.</p>
+      <a href="pages/about.html" class="btn mt-auto">About Us</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer style="background-color: #800000; color: #fff; padding: 3rem 1rem;">
+  <div class="ftr container text-center">
+    <h1 class="fw-bold mb-3">BagBag</h1>
+    <p class="mb-4">
+      Your one-stop online store for all types of bags – men, women, brands, and more. Where style meets function.
+    </p>
+    <div class="footer-links mb-4" style="font-size: 1rem; line-height: 2.5;">
+      <a href="pages/sitemap.html" class="text-white text-decoration-none me-3">
+        <i class="bi bi-kanban-fill me-1"></i>SiteMap
+      </a>
+      <a href="pages/about.html" class="text-white text-decoration-none me-3">
+        <i class="bi bi-info-circle me-1"></i>About Us
+      </a>
+      <a href="pages/queries.html" class="text-white text-decoration-none me-3">
+        <i class="bi bi-question-circle me-1"></i>Queries
+      </a>
+      <a href="index.html" class="text-white text-decoration-none me-3">
+        <i class="bi bi-house-door-fill me-1"></i>Home
+      </a>
+      <a href="pages/men.html" class="text-white text-decoration-none me-3">
+        <i class="bi bi-person me-1"></i>Men
+      </a>
+      <a href="pages/women.html" class="text-white text-decoration-none me-3">
+        <i class="bi bi-person-fill me-1"></i>Women
+      </a>
+      <a href="pages/gallery.html" class="text-white text-decoration-none me-3">
+        <i class="bi bi-images me-1"></i>Gallery
+      </a>
+      <a href="pages/contact.html" class="text-white text-decoration-none">
+        <i class="bi bi-envelope-fill me-1"></i>Contact Us
+      </a>
+    </div>
+    <div>
+      <h4 class="rights-bagbag mb-0">© 2025 BagBag. All Rights Reserved.</h4>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+
+
+<!-- Jquery -->
+
+<script src="js/jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+
+     <!-- Bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+<script>
+  const loader = document.getElementById('loader');
+  const minLoadTime = 850;
+
+  const startTime = new Date().getTime();
+
+  window.addEventListener('load', function () {
+    const elapsed = new Date().getTime() - startTime;
+    const remaining = minLoadTime - elapsed;
+
+    setTimeout(() => {
+      loader.classList.add('fade-out');
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500); // match the CSS transition time
+    }, remaining > 0 ? remaining : 0);
+  });
+</script>
+</script>
+  </body>
+</html>

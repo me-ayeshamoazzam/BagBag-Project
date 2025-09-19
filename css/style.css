@@ -1,0 +1,821 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+body::selection{
+  background-color: #800000;
+  color: white;
+}
+/* Header */
+.navcolor {
+    background-color: #800000;
+}
+
+.logo_section {
+    display: flex;
+    justify-content: center;
+}
+
+ .logo {
+    width: 5%;
+}
+
+.drp_down {
+    background-color: #800000;
+}
+.nav_list > ul > li > a.nav-link {
+    transition: 0.5s;
+    color: rgb(201, 201, 201);
+    position: relative;
+}
+
+
+.nav_list > ul > li > a.nav-link:hover {
+    border-radius: 8%;
+    color: white;
+}
+
+.nav_list > ul > li > a.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.nav_list > ul > li > a.nav-link:hover::before {
+    width: 100%;
+}
+
+
+.dropdown-item::before {
+    content: none !important;
+}
+
+
+.dropdown-item {
+    color: white !important;
+    transition: 0.5s;
+}
+
+
+.dropdown-item:hover {
+    /* background-color: transparent; */
+    color: white !important;
+    background-color: #d30202;
+}
+
+/* Header End */
+
+
+/* Chanel Section */
+
+.chanel-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  animation: zoomOut 5s ease forwards;
+}
+
+
+.chanel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 6vw;
+  color: white;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  animation: zoomIn 1.5s ease forwards;
+  z-index: 2;
+}
+
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.card-row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.card{
+  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+  transform: scale(105%);
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn{
+  background-color: #800000;
+  color: white;
+  transition: 0.4s;
+}
+.btn:hover{
+  background-color: #d30202;
+  color: white;
+}
+.card-body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+
+.card-title {
+  color: #222;
+}
+.card-text {
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+.price {
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/* LOUIS VUITTON */
+
+
+.lv-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  animation: zoomOut 5s ease forwards;
+}
+
+.lv-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 6vw;
+  color: white;
+  opacity: 0;
+  animation: zoomIn 1.5s ease forwards;
+  z-index: 2;
+}
+
+/* Keyframes */
+ @keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* LOUIS VUITTON CSS END */
+
+/* Footer */
+.rights-bagbag {
+  color: #800000;
+  font-size: 14px;
+  background-color: #fff; /* White background */
+  display: inline-block;   /* Shrink-wrap background */
+  padding: 6px 12px;       /* Some padding for nice spacing */
+  border-radius: 6px;      /* Rounded corners */
+}
+
+footer {
+  background-color: #800000;
+  color: white;
+  padding: 40px 20px;
+}
+
+.ftr {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ftr a {
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+
+
+
+/* (Lv & Chanel's paragraphs's) */
+.content_card p{ 
+  text-align: justify;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+/* Home Page Hero Section */
+
+     .hero {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/home\ page/Slider_2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .hero-options {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+    }
+
+    .hero-card {
+      background-color: white;
+      color: #800000;
+      padding: 40px;
+      border-radius: 15px;
+      width: 200px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .hero-card:hover {
+      background-color: #800000;
+      color: white;
+      transform: scale(1.05);
+    }
+
+/* Home page hero secton end */
+
+    /* Brands Carousel */
+
+    .brands-section {
+      padding: 80px 0;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+
+    .brands-section h2 {
+      margin-bottom: 50px;
+      font-weight: 700;
+      color: #800000;
+    }
+
+    .brand-logo {
+      max-width: 150px;
+      height: auto;
+      margin: 0 15px;
+      filter: grayscale(100%);
+      transition: 0.3s;
+      flex-shrink: 0;
+    }
+
+    .brand-logo:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+      /* Animations */
+      .animate {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 1s ease-in-out;
+      }
+
+      .animate.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+.brand-carousal-heading {
+  background-color: #800000;
+  display: inline-block;   /* Keeps background only around text */
+  padding: 10px 20px;      /* Adjust padding as needed */
+  border-radius: 6px;      /* Optional: adds a subtle rounded edge */
+}
+
+      /* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+  }
+
+  .hero div {
+    width: 100%;
+    max-width: 600px; 
+    text-align: center; 
+  }
+
+  .hero-options {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
+    width: 100%;         
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 25px;
+    font-size: 1rem;
+  }
+}
+
+.d-flex.justify-content-center.flex-wrap.animate {
+  align-items: center;
+}
+.featureProducts {
+  color: #fff; /* White text for contrast */
+}
+/* Highlighted bounce style */
+.highlighted-bounce {
+  background-color: #800000; /* Maroon highlight */
+  display: inline-block;     /* Shrink-wrap background */
+  padding: 12px 24px;
+  border-radius: 8px;
+  animation: bounceAnimation 1.5s ease infinite;
+  box-shadow: 0 4px 15px rgba(128, 0, 0, 0.2); /* Optional glow */
+}
+
+/* Bounce animation */
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+}
+
+.ad-card{
+  border: 2px solid rgb(233, 233, 233);
+  border-radius: 20px;
+  transition: 0.50s;
+}
+.ad-card:hover{
+  transform: translateY(-18px);
+}
+.contact-header{
+  background-color: #8b0000 ;
+}
+.queries-header{
+  background-color: #8b0000;
+}
+.queries-header a{
+  color: white;
+}
+.faqs > h5{
+  margin-bottom: 20px;
+  display: flex;
+}
+.ans{
+  display: none;
+}
+.not-a-product-card .card-body {
+  display: block;
+}
+.not-a-product-card .btn {
+  margin-top: 0;
+  width: auto;
+}
+
+/* Buy Now */
+
+
+    .product-container {
+      display: flex;
+      gap: 20px;
+      padding-top: 30px;
+      max-width: 1500px;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+
+    .product-image {
+      flex: 1 1 300px;
+      padding: 10px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product-details {
+      flex: 2 1 400px;
+      padding: 10px;
+    }
+
+    .product-details h2 {
+      color: #800000;
+      margin-top: 0;
+    }
+
+    .product-details ul {
+      padding-left: 20px;
+    }
+
+    .product-details li {
+      margin-bottom: 8px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #800000;
+    }
+
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .product-image,
+      .product-details {
+        flex: 1 1 100%;
+        padding: 10px 0;
+      }
+    }
+
+/* Men Page */
+.men-section {
+  overflow: hidden;
+}
+
+.men-hero {
+  background: linear-gradient(90deg, rgba(136, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  height: 720px;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.men-hero-content {
+  max-width: 800px;
+  color: white;
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.men-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.men-para {
+  font-size: 1.25rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .men-heading {
+    font-size: 2rem;
+  }
+
+  .men-para {
+    font-size: 1rem;
+  }
+}
+.women-category{
+  transition: 0.40s;
+}
+.women-category:hover{
+  transform: scale(107%);
+}
+.men-category{
+  transition: 0.40s;
+} 
+.men-category:hover{
+  transform: scale(107%);
+} 
+
+/* Gucci Hero Section */
+.gucci-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black; /* optional, fills gaps for object-fit: contain */
+}
+
+/* Image Style */
+.hero-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%) scale(1.2); /* ✅ zoomed-in start */
+  animation: zoomOut 5s ease forwards;
+  z-index: 1;
+}
+
+/* Centered Text Style */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 6vw;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  animation: zoomIn 1.5s ease forwards;
+  z-index: 2;
+}
+
+/* Image Zoom Out Animation */
+@keyframes zoomOut {
+  0% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Text Zoom In Animation */
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Prada Hero Section */
+.prada-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black; /* optional, fills gaps for object-fit: contain */
+}
+
+/* Image Style */
+.hero-img {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%) scale(1.2); /* ✅ zoomed-in start */
+  animation: zoomOut 5s ease forwards;
+  z-index: 1;
+}
+
+/* Centered Text Style */
+.prada-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 6vw;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  animation: zoomIn 1.5s ease forwards;
+  z-index: 2;
+}
+
+/* Image Zoom Out Animation */
+@keyframes zoomOut {
+  0% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Text Zoom In Animation */
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.sale{
+  padding: 6px;
+  background-color: #800000;
+  color: white;
+}
+
+/* Hermes Hero */
+.hermes-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  animation: zoomOut 5s ease forwards;
+}
+
+
+.hermes-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 6vw;
+  color: white;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  animation: zoomIn 1.5s ease forwards;
+  z-index: 2;
+}
+
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.mar{
+  background-color: #690808;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+}
+.sale-heading{
+  color: #800000;
+}
+  /* Loader wrapper */
+  #loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  #loader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* Spinner */
+  .spinner-border {
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    border-bottom: #d30202;
+  }
+  .brand-heading{
+    color: #800000;
+  }
+  /* Scroll bar */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f8f8f8;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #800000;
+    border-radius: 10px;
+    border: 2px solid #f8f8f8;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
