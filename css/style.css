@@ -818,4 +818,46 @@ footer {
 
   ::-webkit-scrollbar-corner {
     background: transparent;
-  }
+  }  }
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #0d0d0d;
+    }
+
+    .hero-card {
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: #111;
+      border: 2px solid #0ff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card:hover {
+      background: #0ff;
+      color: #111;
+      box-shadow: 0 0 20px #0ff,
+                  0 0 40px #0ff,
+                  0 0 60px #0ff,
+                  0 0 80px #0ff;
+    }
+
+    /* Optional pulse animation */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 5px #0ff, 0 0 10px #0ff inset; }
+      50% { box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset; }
+      100% { box-shadow: 0 0 5px #0ff, 0 0 10px #0ff inset; }
+    }
+
+    .hero-card {
+      animation: pulse 2s infinite;
+    }
