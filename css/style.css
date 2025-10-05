@@ -10,14 +10,33 @@ body::selection{
     background-color: #800000;
 }
 
-.logo_section {
+/* .logo_section {
     display: flex;
     justify-content: center;
 }
 
  .logo {
     width: 5%;
+} */
+
+.logo_section {
+    display: flex;
+    justify-content: center;
 }
+
+/* Default: desktop size */
+.logo {
+    width: 97px;
+    height: auto;
+}
+
+/* Slightly smaller on small screens */
+@media (max-width: 768px) {
+    .logo {
+        width: 65px;
+    }
+}
+
 
 .drp_down {
     background-color: #800000;
