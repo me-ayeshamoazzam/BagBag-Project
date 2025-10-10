@@ -19,7 +19,7 @@
 
     <title>BagBag-About us</title>
     <style>
-      .story-section {
+      /* .story-section {
   padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
@@ -79,7 +79,141 @@ h3 {
   font-weight: bold;
   color: #800000;
   font-size: 26px;
+} */
+ /* ABOUT US SECTION */
+:root {
+  --maroon: #800000;
+  --maroon-gradient: linear-gradient(135deg, #800000, #a00000);
+  --text-dark: #1a1a1a;
+  --bg-light: #fff8f8;
 }
+
+.about-us {
+  position: relative;
+  padding: 6rem 2rem;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  overflow: hidden;
+}
+
+.about-bg-glow {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(128,0,0,0.15) 0%, transparent 70%);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: var(--maroon-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-image {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(128, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+.about-block {
+  margin-bottom: 3rem;
+}
+.about-block h2 {
+  font-size: 1.8rem;
+  background: var(--maroon-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.about-block p,
+.about-block ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+.about-block ul {
+  list-style: none;
+  padding-left: 0;
+}
+.about-block ul li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.about-block ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--maroon);
+  font-weight: bold;
+}
+
+/* ANIMATIONS */
+.animate-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: animate with delay */
+.animate-fade:nth-child(2) { animation-delay: 0.1s; }
+.animate-fade:nth-child(3) { animation-delay: 0.2s; }
+.animate-fade:nth-child(4) { animation-delay: 0.3s; }
+
     </style>
 </head>
 <body>
@@ -195,7 +329,7 @@ h3 {
     <!-- Nav Bar End -->    
 
 <!-----ABoout section start ---->
-<div class="p-5">
+<!-- <div class="p-5">
   <section class="story-section">
     <div class="story-content">
       <div class="story-text">
@@ -235,8 +369,75 @@ h3 {
 
 <h3><b>Our Team</b></h3>
 <p>Our team consists of experienced, passionate, and creative individuals who constantly work on new ideas. Each team member brings a unique skill that strengthens the foundation of our work. We support each other and collaborate to reach our goals.</p>
-</div>
+</div> -->
 <!------About section End ---->
+<!-- ABOUT US SECTION -->
+<section class="about-us">
+  <div class="about-bg-glow"></div>
+
+  <div class="about-container">
+    <h1 class="about-heading">About BagBag</h1>
+
+    <p class="about-intro animate-fade">
+      BAGBAG MAKES UPDATED, MODERN BAGS<br>
+      WITH A COMMITMENT TO TIMELESS QUALITY AND OUR LOCAL ROOTS.
+    </p>
+
+    <p class="about-description animate-fade">
+      BagBag — a brand built with love — doesn’t shy away from simplicity and originality.
+      We design functional, modern bags for every purpose, inspired by your real life and our culture.
+      This is our journey of design and utility combined.
+    </p>
+
+    <!-- IMAGE SECTION -->
+    <div class="about-image animate-slide-up">
+      <img src="../images/bagpack image.avif" alt="About BagBag">
+    </div>
+
+    <!-- VISION -->
+    <div class="about-block animate-fade">
+      <h2 class="fw-bold">Our Vision</h2>
+      <p>
+        Our vision is to create a digital space that brings ease to people’s lives and makes technology
+        understandable and useful for everyone. We aim to become a trusted source for our users, no matter
+        their background. We believe in building something meaningful and long-lasting.
+      </p>
+    </div>
+
+    <!-- MISSION -->
+    <div class="about-block animate-fade">
+      <h2 class="fw-bold">Our Mission</h2>
+      <p>
+        Our mission is to provide smart solutions to everyday problems — in a fast, reliable, and user-friendly way.
+        We strive to deliver real value to our users so they come back to us again and again.
+        Innovation, transparency, and customer satisfaction define who we are.
+      </p>
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <div class="about-block animate-fade">
+      <h2 class="fw-bold">Why Choose Us?</h2>
+      <ul>
+        <li>Quality services and content</li>
+        <li>Fast and responsive support</li>
+        <li>User-first design and interface</li>
+        <li>Constant updates and innovation</li>
+        <li>Commitment to trust and transparency</li>
+        <li>We work hard to earn our users’ trust by giving our 100% in everything we do</li>
+      </ul>
+    </div>
+
+    <!-- TEAM -->
+    <div class="about-block animate-fade">
+      <h2 class="fw-bold">Our Team</h2>
+      <p>
+        Our team consists of experienced, passionate, and creative individuals who constantly work on new ideas.
+        Each team member brings a unique skill that strengthens the foundation of our work.
+        We support each other and collaborate to reach our goals.
+      </p>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
 <footer style="background-color: #800000; color: #fff; padding: 3rem 1rem;">
